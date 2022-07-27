@@ -1,5 +1,5 @@
 var canvas,bg;
-var together;
+//var together; //ask madam
 var cat, catImg1,catImg2;
 var mouse, mouseImg1,mouseImg2;
 
@@ -48,12 +48,12 @@ function draw() {
 
     if(cat.x - mouse.y < (cat.width - mouse.y)/2)
     { 
-        cat.velocityX= -4;
+        //cat.velocityX= -4; //ask madam, this line not needed
         cat.addAnimation("catLastImage", catImg3);
         cat.x =300;
         cat.scale=0.2;
         cat.changeAnimation("catLastImage");
-        mouse.addAnimation("mouseLastImage", mouseImg3);
+        mouse.addAnimation("mouseLastImage", mouseImg1);
         mouse.scale=0.15;
         mouse.changeAnimation("mouseLastImage");
     }
